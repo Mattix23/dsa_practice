@@ -23,3 +23,6 @@ Constraints:
 1 <= nums.length <= 3 * 104
 -3 * 104 <= nums[i] <= 3 * 104
 Each element in the array appears twice except for one element which appears only once.
+
+Summary:
+The problem is asking to find a single integer in an array, where the array includes integers that can appear more than once. The output of this problem is the integer that appears once.
