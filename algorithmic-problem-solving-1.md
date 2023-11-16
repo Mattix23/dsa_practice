@@ -26,3 +26,7 @@ Each element in the array appears twice except for one element which appears onl
 
 Summary:
 The problem is asking to find a single integer in an array, where the array includes integers that can appear more than once. The output of this problem is the integer that appears once.
+
+Example:
+Input/Outputs of this problem would include something like [1,1,2,3,3] where the desired integer on this input would be "2" since that is the only integer to appear once. Some edge cases in this can be an empty list, where it should return false or None since the result is intended to be an integer.
+Another example can be a list where all numbers appear once, or all numbers appear multiple times. [1,2,3] or [1,1,2,2,3,3] in this case, the first output should return all the list, since each one is shown once and the second list would return none.
