@@ -29,10 +29,10 @@ def find_single_num(nums):
     num_count = {}
     for num in nums:
         if num in num_count:
-        # If the number exists, add the number and increment it by 1
+        # If the number exists, increments the counter by 1 for that number
             num_count[num] += 1
         else:
-        # if the number doesn't exist, add the number and set it to 1
+        # if the number doesn't exist, add the number and set the counter of that number to 1
             num_count[num] = 1
     for num, count in num_count.items():
         # iterate through the dictionary searching for the number that has the value as 1 and return it
