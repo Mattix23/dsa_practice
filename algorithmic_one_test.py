@@ -1,4 +1,3 @@
-
 from algorithmic_one import find_single_num
 
 def test_find_single_num():
