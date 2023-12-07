@@ -30,7 +30,7 @@ class LinkedList:
         self.size = 0
 
         # function to add new node at the beginning of the list
-    def insertFirst(self, new_data):   
+    def insert_first(self, new_data):   
         newNode = Node(new_data)
         if self.head == None:
             self.head = newNode
@@ -41,7 +41,7 @@ class LinkedList:
             self.head = newNode
         self.size += 1
 
-    def removeFirst(self):
+    def remove_first(self):
         if self.head:
             oldHead = self.head
             newHead = oldHead.next
@@ -49,10 +49,10 @@ class LinkedList:
             self.size -=1
             return oldHead
     
-    def getFirst(self):
+    def get_first(self):
         return self.head
     
-    def getSize(self):
+    def get_size(self):
         return self.size
 
     def reverse(self):
@@ -72,22 +72,22 @@ class LinkedList:
         self.head = previous
  
         # helper function to print the linked list
-    def printList(self):
+    def print_list(self):
         temp = self.head
         while(temp):
             print(temp.data, end=" ")
             temp = temp.next
 
 llist = LinkedList()
-llist.insertFirst(20)
-llist.insertFirst(4)
-llist.insertFirst(15)
-llist.insertFirst(85)
+llist.insert_first(20)
+llist.insert_first(4)
+llist.insert_first(15)
+llist.insert_first(85)
  
 print ("Given linked list")
-llist.printList()
+llist.print_list()
 # prints 85, 15, 4, 20
 llist.reverse()
 print ("\nReversed linked list")
-llist.printList()
+llist.print_list()
 # prints 20, 4, 15, 85
